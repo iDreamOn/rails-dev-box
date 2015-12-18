@@ -34,6 +34,9 @@ systemctl start mariadb
 #mysql_secure_installation
 systemctl enable mariadb.service
 
+#Needed for graphs
+mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u root mysql
+
 echo Creating rails user for mysql
 mysql -uroot <<SQL
 GRANT ALL PRIVILEGES ON *.* to 'rails'@'localhost';
