@@ -52,6 +52,9 @@ install 'ExecJS runtime' nodejs
 install Redis redis
 install RabbitMQ rabbitmq-server
 
+#Needed for Active record graph
+install 'Graphviz' graphviz
+
 # Needed for docs generation.
 #update-locale LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8
 
